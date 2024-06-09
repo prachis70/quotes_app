@@ -14,16 +14,19 @@ class _HomepageState extends State<Homepage> {
     return Scaffold(
       body: Column(
         children: [
-          Container(
-            height: 781,
-            width: double.infinity,
-            decoration: BoxDecoration(
-                image: DecorationImage(
-              fit: BoxFit.cover,
-              image: AssetImage('assets/p2.jpg'),
-            )),
+          Column(
+            children: [
+              Container(
+                height: 860,
+                width: double.infinity,
+                decoration: BoxDecoration(
+                    image: DecorationImage(
+                      fit: BoxFit.cover,
+                      image: AssetImage('assets/p2.jpg'),
+                    )),
+              ),
+            ],
           ),
-
         ],
       ),
       floatingActionButton: FloatingActionButton(

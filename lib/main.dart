@@ -14,7 +14,7 @@ class Quote_App extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       routes: {
         '/':(context) => Homepage(),
-        '/cat':(context) => CatPage(),
+        '/cat':(context) => Catgpage(),
       },
     );
   }

@@ -82,6 +82,13 @@ flutter:
     - assets/p16.jpeg
     - assets/p17.jpg
     - assets/p18.jpeg
+    - assets/happy.jpeg
+    - assets/sad.jpeg
+    - assets/love.jpeg
+    - assets/goodmornig.jpeg
+    - assets/motivation.jpeg
+    - assets/spritual.png
+    - assets/prachi.webp
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
