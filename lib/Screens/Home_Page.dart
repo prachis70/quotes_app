@@ -21,6 +21,7 @@ class _HomepageState extends State<Homepage> {
                 width: double.infinity,
                 decoration: BoxDecoration(
                     image: DecorationImage(
+
                       fit: BoxFit.cover,
                       image: AssetImage('assets/p2.jpg'),
                     )),
