@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:quotes_app/Screens/Categoury_Page.dart';
 import 'package:quotes_app/Screens/Home_Page.dart';
+
+import 'Screens/Motivational_quotes.dart';
 void main()
 {
   runApp(Quote_App());
@@ -15,6 +17,7 @@ class Quote_App extends StatelessWidget {
       routes: {
         '/':(context) => Homepage(),
         '/cat':(context) => Catgpage(),
+        '/mt':(context) => Motivation(),
       },
     );
   }

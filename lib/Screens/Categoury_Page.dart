@@ -1,4 +1,3 @@
-// import 'dart:nativewrappers/_internal/vm/lib/core_patch.dart';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -17,12 +16,18 @@ class _CatgpageState extends State<Catgpage> {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
+        actions: [
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Icon(Icons.category),
+          ),
+        ],
         backgroundColor: Colors.white,
         elevation: 10,
         title: Text(
           'Category_Home',
           style: TextStyle(
-              fontSize: 30, fontWeight: FontWeight.bold, color: Colors.black),
+              fontSize: 20, fontWeight: FontWeight.bold, color: Colors.black),
         ),
       ),
       body: SingleChildScrollView(
@@ -31,7 +36,9 @@ class _CatgpageState extends State<Catgpage> {
             imgList.length,
             (index) => GestureDetector(
               onTap: () {
-                setState(() {});
+                setState(() {
+                  Navigator.of(context).pushNamed('/mt');
+                });
               },
               child:
                   Box1(img: imgList[index]['img'], cat: imgList[index]['cat']),
@@ -48,13 +55,13 @@ Widget Box1({required String img, required String cat}) {
 
   },
     child: Padding(
-      padding: const EdgeInsets.only(top: 30,left: 15),
+      padding: const EdgeInsets.only(top: 30,left: 28),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
           Container(
-            height: 180,
-            width: 180,
+            height: 150,
+            width: 150,
             padding: EdgeInsets.all(100),
             decoration: BoxDecoration(
               boxShadow: [
@@ -67,11 +74,10 @@ Widget Box1({required String img, required String cat}) {
               borderRadius: BorderRadius.circular(20),
             ),
           ),
-          Text(cat,style: TextStyle(fontWeight: FontWeight.bold,fontSize: 28,color: Colors.white),)
+          Text(cat,style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20,color: Colors.white70),)
         ],
       ),
     ),
   );
 }
-
-int index = 0;
+int index=0;
