@@ -408,7 +408,7 @@ List quoteList = [
   {
     "quote":
     "It’s your place in the world; it’s your life. Go on and do all you can with it, and make it the life you want to live.",
-    "author": "Mae Jemison"
+    "author": "Mae Jemison,",
   },
   {
     "quote":
@@ -456,6 +456,53 @@ List quoteList = [
     "author": "Steve Jobs"
   },
   {"quote": "If you can dream it, you can achieve it.", "author": "Zig Ziglar"}
+];
+
+List LoveList=[
+  {
+     'love':'“I love you more than words can express”',
+  },
+  {
+    'love':'“I love you more than I did yesterday, but not as much as tomorrow”',
+  },
+  {
+     'love':'"I will love you until the end of time"',
+  },
+  {
+    'love':'“I love you, forever and always”',
+  },
+  {
+  'love':'“Love all, trust a few, do wrong to none.” – ...',
+  },
+  {
+    'love':'“You call it madness, but I call it love.” – ...',
+
+  },
+  {
+    'love':' “A life lived in love will never be dull.” – ...',
+
+  },
+  {
+    'love':'“Life is the flower for which love is the honey.” – ...',
+
+  },
+  {
+    'love':'“All you need is love.” – ...',
+
+  },
+  {
+    'love':'"I love you and I like you." — ...',
+
+  },
+  {
+    'love':'"For small creatures such as we, the vastness is bearable only through love." — ...',
+
+  },
+  {
+    'love':'"Nobody has ever measured, not even poets, how much the heart can hold." — ...',
+
+  },
+
 ];
 List imgList=[
   // {

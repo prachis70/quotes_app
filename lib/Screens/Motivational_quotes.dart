@@ -2,6 +2,7 @@ import 'dart:math';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:quotes_app/utils/Quote_Data_List.dart';
 
 import '../utils/Quote_Modal.dart';
 QuoteModel? quoteModel;
@@ -15,8 +16,19 @@ class Motivation extends StatefulWidget {
   State<Motivation> createState() => _MotivationState();
 }
 
+
 class _MotivationState extends State<Motivation> {
   @override
+  void initState()
+  {
+    setState(() {
+
+    });
+    quoteModel=QuoteModel.toList(quoteList);
+    super.initState();
+
+  }
+
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
@@ -59,11 +71,11 @@ class _MotivationState extends State<Motivation> {
                       ListTile(
                         title: Text(quoteModel!.quoteModelist[index].quote!),
                         subtitle:
-                            Text(quoteModel!.quoteModelist[index].author!),
+                            Text(quoteModel!.quoteModelist[index].author!,style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color: Colors.black),),
                       )
-                    ]),
+                    ],),
                   )),
-      floatingActionButton: FloatingActionButton(
+          floatingActionButton: FloatingActionButton(
         onPressed: () {
           setState(() {
             index++;
@@ -99,5 +111,4 @@ class _MotivationState extends State<Motivation> {
     );
   }
 }
-
 int index = 0;

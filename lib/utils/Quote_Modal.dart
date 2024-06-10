@@ -5,13 +5,14 @@ class QuoteModel
 {
   String? author;
   String? quote;
+  String? Love;
   List <QuoteModel> quoteModelist=[];
 
-  QuoteModel({this.author,this.quote});
+  QuoteModel({this.author,this.quote,});
 
   factory QuoteModel.fromQuotes(Map m1)
   {
-    return QuoteModel(author: m1['author'],quote: m1['quote']);
+    return QuoteModel(author: m1['author'],quote: m1['quote'],Love[]);
   }
 
 
@@ -27,16 +28,14 @@ class QuoteModel
 }
 bool xh=false;
 List colorList=[
-  Colors.pink,
+ // Colors.pinkAccent,
   Colors.white,
-  Colors.yellow,
-  Colors.green,
-  Colors.amber,
+  Colors.yellowAccent,
+  Colors.greenAccent,
+  Colors.amberAccent,
   Colors.teal,
   Colors.grey,
-  Colors.pink,
   Colors.white,
-  Colors.yellow,
   Colors.green,
   Colors.amber,
   Colors.teal,
