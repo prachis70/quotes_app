@@ -24,7 +24,7 @@ class _LoveQuotesState extends State<LoveQuotes> {
     setState(() {
 
     });
-    quoteModel=QuoteModel.toList(quoteList);
+    quoteModel=QuoteModel.toList(LoveList);
     super.initState();
 
   }
@@ -34,7 +34,7 @@ class _LoveQuotesState extends State<LoveQuotes> {
       backgroundColor: Colors.black,
       appBar: AppBar(
         backgroundColor: Colors.white,
-        title: Text('Motivational_Quotes',
+        title: Text('Love',
             style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 20,
@@ -59,8 +59,8 @@ class _LoveQuotesState extends State<LoveQuotes> {
         itemBuilder: (context, index) => Card(
           color: colorList[index % colorList.length],
           child: ListTile(
-            title: Text(quoteModel!.quoteModelist[index].quote!),
-            subtitle: Text(quoteModel!.quoteModelist[index].author!),
+            title: Text(quoteModel!.quoteModelist[index].love!),
+            // subtitle: Text(quoteModel!.quoteModelist[index].author!),
           ),
         ),
       )
@@ -69,16 +69,16 @@ class _LoveQuotesState extends State<LoveQuotes> {
             color: colorList[index % colorList.length],
             child: Column(children: [
               ListTile(
-                title: Text(quoteModel!.quoteModelist[index].quote!),
-                subtitle:
-                Text(quoteModel!.quoteModelist[index].author!,style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color: Colors.black),),
+                title: Text(quoteModel!.quoteModelist[index].love!),
+
+                // Text(quoteModel!.quoteModelist[index].author!,style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color: Colors.black),),
               )
             ],),
           )),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           setState(() {
-            index++;
+            no++;
           });
           Random random = Random();
           int x = random.nextInt(quoteModel!.quoteModelist.length);
@@ -88,8 +88,8 @@ class _LoveQuotesState extends State<LoveQuotes> {
             builder: (context) {
               return AlertDialog(
                 backgroundColor: colorList[x % colorList.length],
-                title: Text(quoteModel!.quoteModelist[x].author!),
-                content: Text(quoteModel!.quoteModelist[x].quote!),
+                // title: Text(quoteModel!.quoteModelist[x].author!),
+                content: Text(quoteModel!.quoteModelist[x].love!),
                 actions: [
                   TextButton(
                     onPressed: () {},
@@ -111,4 +111,4 @@ class _LoveQuotesState extends State<LoveQuotes> {
     );
   }
 }
-int index = 0;
+int no=0;

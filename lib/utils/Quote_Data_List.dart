@@ -1,6 +1,6 @@
 
+
 import 'package:flutter/material.dart';
-int index=0;
 List selectedIndex=[];
 List quoteList = [
   {
@@ -460,19 +460,19 @@ List quoteList = [
 
 List LoveList=[
   {
-     'love':'“I love you more than words can express”',
+    'love':'“I love you more than words can express”',
   },
   {
     'love':'“I love you more than I did yesterday, but not as much as tomorrow”',
   },
   {
-     'love':'"I will love you until the end of time"',
+    'love':'"I will love you until the end of time"',
   },
   {
     'love':'“I love you, forever and always”',
   },
   {
-  'love':'“Love all, trust a few, do wrong to none.” – ...',
+    'love':'“Love all, trust a few, do wrong to none.” – ...',
   },
   {
     'love':'“You call it madness, but I call it love.” – ...',
@@ -502,60 +502,25 @@ List LoveList=[
     'love':'"Nobody has ever measured, not even poets, how much the heart can hold." — ...',
 
   },
+];
+
+
+//wallpaper
+
+List images=[
+   'assets/background/bg1.jpeg',
+   'assets/background/bg2.jpeg',
+   'assets/background/bg3.jpeg',
+   'assets/background/bg4.jpeg',
+   'assets/background/bg5.jpeg',
+   'assets/background/bg6.jpeg',
+   'assets/background/bg7.jpeg',
+   'assets/background/bg8.jpeg',
+   'assets/background/bg9.jpeg',
+   'assets/background/bg10.jpeg',
 
 ];
 List imgList=[
-  // {
-  //   'cat':'Motivation',
-  //   'img':'assets/p3.jpeg',
-  // },
-  // {
-  //   'cat':'spritual',
-  //   'img':'assets/p4.jpeg',
-  // },
-  // {
-  //   'img':'assets/p5.jpeg',
-  // },
-  // {
-  //   'img':'assets/p6.jpeg',
-  // },
-  // {
-  //   'img':'assets/p7.jpeg',
-  // },
-  // {
-  //   'img':'assets/p8.jpeg',
-  // },
-  // {
-  //   'img':'assets/p9.jpeg',
-  // },
-  // {
-  //   'img':'assets/p10.jpeg',
-  // },
-  // {
-  //   'img':'assets/p11.jpeg',
-  // },
-  // {
-  //   'img':'assets/p12.jpeg',
-  // },
-  // {
-  //   'img':'assets/p13.jpeg',
-  // },
-  // {
-  //   'img':'assets/p14.jpeg',
-  // },
-  // {
-  //   'img':'assets/p15.jpeg',
-  // },
-  // {
-  //   'img':'assets/p16.jpeg',
-  // },
-  // {
-  //   'img':'assets/p17.jpg',
-  // },
-  // {
-  //   'img':'assets/p18.jpeg',
-  // },
-
   {
     'cat':'Motivation',
     'img':'assets/motivation.jpeg',

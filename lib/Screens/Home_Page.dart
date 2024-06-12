@@ -69,7 +69,7 @@ class _HomepageState extends State<Homepage> {
         onPressed: () {
 
           setState(() {
-            Navigator.of(context).pushNamed('/cat');
+            Navigator.of(context).pushNamed('/cate');
           });
 
         },

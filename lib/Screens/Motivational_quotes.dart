@@ -52,34 +52,48 @@ class _MotivationState extends State<Motivation> {
               ))
         ],
       ),
-      body: (xh)
-          ? GridView.builder(
-              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: 2, crossAxisSpacing: 9 / 16),
-              itemBuilder: (context, index) => Card(
-                color: colorList[index % colorList.length],
-                child: ListTile(
-                  title: Text(quoteModel!.quoteModelist[index].quote!),
-                  subtitle: Text(quoteModel!.quoteModelist[index].author!),
-                ),
-              ),
-            )
-          : ListView.builder(
-              itemBuilder: (context, index) => Card(
+      body: (xh)?
+          // ? GestureDetector(onTap: () {
+          //
+          //   setState(() {
+          //     select=inde;
+          //     print();
+          //     Navigator.of(context).pushNamed('/ed');
+          //   });
+          // },
+             GridView.builder(
+                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 2, crossAxisSpacing: 9 / 16),
+                itemBuilder: (context, index) => GestureDetector(
+                  onTap: (){
+                    select=index;
+                    print(index);
+                    Navigator.of(context).pushNamed('/ed');
+                  },
+                  child: Card(
                     color: colorList[index % colorList.length],
-                    child: Column(children: [
-                      ListTile(
-                        title: Text(quoteModel!.quoteModelist[index].quote!),
-                        subtitle:
-                            Text(quoteModel!.quoteModelist[index].author!,style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color: Colors.black),),
-                      )
-                    ],),
-                  )),
+                    child: ListTile(
+                      title: Text(quoteModel!.quoteModelist[index].quote!),
+                      subtitle: Text(quoteModel!.quoteModelist[index].author!),
+                    ),
+                  ),
+                ),
+              ):
+             ListView.builder(
+    itemBuilder: (context, index) => Card(
+      color: colorList[index % colorList.length],
+      child: Column(children: [
+        ListTile(
+          title: Text(quoteModel!.quoteModelist[index].quote!),
+          subtitle:
+          Text(quoteModel!.quoteModelist[index].author!,style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color: Colors.black),),
+        )
+      ],),
+    )),
+          );
           floatingActionButton: FloatingActionButton(
         onPressed: () {
-          setState(() {
-            index++;
-          });
+
           Random random = Random();
           int x = random.nextInt(quoteModel!.quoteModelist.length);
 
@@ -107,8 +121,8 @@ class _MotivationState extends State<Motivation> {
           );
         },
         child: Icon(Icons.next_plan),
-      ),
+
     );
   }
 }
-int index = 0;
+int select=0;

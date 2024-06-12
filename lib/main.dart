@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:quotes_app/Screens/Categoury_Page.dart';
+import 'package:quotes_app/Screens/Edit_page.dart';
 import 'package:quotes_app/Screens/Home_Page.dart';
 import 'package:quotes_app/Screens/Love_quotes.dart';
 
@@ -18,9 +19,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       routes: {
         '/':(context) => Homepage(),
-        '/cat':(context) => Catgpage(),
+        '/cate':(context) => Catgpage(),
         '/mt':(context) => Motivation(),
         '/love':(context)=>LoveQuotes(),
+        '/ed':(context)=>Edit_page(),
       },
     );
   }

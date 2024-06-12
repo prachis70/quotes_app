@@ -5,14 +5,14 @@ class QuoteModel
 {
   String? author;
   String? quote;
-  String? Love;
+  String? love;
   List <QuoteModel> quoteModelist=[];
 
-  QuoteModel({this.author,this.quote,});
+  QuoteModel({this.author,this.quote,this.love});
 
   factory QuoteModel.fromQuotes(Map m1)
   {
-    return QuoteModel(author: m1['author'],quote: m1['quote'],Love[]);
+    return QuoteModel(author: m1['author'],quote: m1['quote'],love:m1['love']);
   }
 
 
