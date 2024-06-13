@@ -9,16 +9,16 @@ import 'Categoury_Page.dart';
 QuoteModel? quoteModel;
 
 
-class LoveQuotes extends StatefulWidget {
-  const LoveQuotes({super.key});
+class MorningQuotes extends StatefulWidget {
+  const MorningQuotes({super.key});
 
 
   @override
-  State<LoveQuotes> createState() => _LoveQuotesState();
+  State<MorningQuotes> createState() => _MorningQuotesState();
 }
 
 
-class _LoveQuotesState extends State<LoveQuotes> {
+class _MorningQuotesState extends State<MorningQuotes> {
   @override
   void initState()
   {
@@ -35,7 +35,7 @@ class _LoveQuotesState extends State<LoveQuotes> {
       backgroundColor: Colors.black,
       appBar: AppBar(
         backgroundColor: Colors.white,
-        title: Text('Love💖Quotes',
+        title: Text('Love',
             style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 20,
@@ -55,20 +55,20 @@ class _LoveQuotesState extends State<LoveQuotes> {
       ),
       body: (xh)
           ? GestureDetector(onTap: () {
-            Navigator.of(context).pushNamed('/ed');
-          },
-            child: GridView.builder(
-                    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+        Navigator.of(context).pushNamed('/ed');
+      },
+        child: GridView.builder(
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 2, crossAxisSpacing: 9 / 16),
-                    itemBuilder: (context, index) => Card(
+          itemBuilder: (context, index) => Card(
             color: colorList[index % colorList.length],
             child: ListTile(
-              title: Text('${quotes[ch][index]['quote']}'),
-             // subtitle: Text('${quotes[ch][index]['author']}'),
+              title: Text(quoteModel!.quoteModelist[index].love!),
+              // subtitle: Text(quoteModel!.quoteModelist[index].author!),
             ),
-                    ),
-                  ),
-          )
+          ),
+        ),
+      )
           : ListView.builder(
           itemBuilder: (context, index) => Card(
             color: colorList[index % colorList.length],

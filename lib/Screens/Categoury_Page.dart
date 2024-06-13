@@ -34,18 +34,37 @@ class _CatgpageState extends State<Catgpage> {
           children: List.generate(
             imgList.length,
             (index) => GestureDetector(onTap:() {
-
-              // Navigator.of(context).pushNamed('/mt');
               setState(() {
-                if(index==0)
-                  {
-                    Navigator.of(context).pushNamed('/mt');
-                  }
-              else  if(index==1)
-                {
-                  Navigator.of(context).pushNamed('/love');
-                }
-              });
+                print(index);
+                ch=index;
+                Navigator.of(context).pushNamed('/mt');
+
+              //   if(index==0)
+              //     {
+              //       Navigator.of(context).pushNamed('/mt');
+              //     }
+              // else  if(index==1)
+              //   {
+              //     Navigator.of(context).pushNamed('/love');
+              //   }
+              //  else  if(index==2)
+              //  {
+              //     Navigator.of(context).pushNamed('/happy');
+              //  }
+              //   else  if(index==3)
+              //   {
+              //     Navigator.of(context).pushNamed('/sad');
+              //   }
+              //   else  if(index==4)
+              //   {
+              //     Navigator.of(context).pushNamed('/sp');
+              //   }
+              //   else  if(index==5)
+              //   {
+              //     Navigator.of(context).pushNamed('/gm');
+              //   }
+                 }
+              );
 
             },child: Box1(img: imgList[index]['img'], cat: imgList[index]['cat'])),
           ),
@@ -93,3 +112,5 @@ Widget Box1({required String img, required String cat}) {
     ),
   );
 }
+
+int ch=0;

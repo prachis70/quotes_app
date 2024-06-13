@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:quotes_app/Screens/Categoury_Page.dart';
 import 'package:quotes_app/Screens/Motivational_quotes.dart';
 import 'package:quotes_app/utils/Quote_Data_List.dart';
 
@@ -41,15 +42,26 @@ class _Edit_pageState extends State<Edit_page> {
                     ),
                     alignment: Alignment.center,
                     child: RichText(text: TextSpan(children: [
-                      TextSpan(text: '${quoteList[select]['quote']}',style: TextStyle(color: Colors.white,fontSize: 25),),
-                      TextSpan(text: '\n\n  -${quoteList[select]['author']}',style: TextStyle(color: Colors.white,fontSize: 25),),
+                      TextSpan(text: '${quotes[ch][select]['quote']}',style: TextStyle(color: Colors.white,fontSize: 25),),
+                      TextSpan(text: '\n\n  -${quotes[ch][select]['author']}',style: TextStyle(color: Colors.white,fontSize: 25),)
+
                     ]),),
-                    // child: Text('${quoteList[select]['quote']}',style: TextStyle(color: Colors.white,fontSize: 25),),
                   ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              IconButton(onPressed: () {
+
+              },icon: Icon(Icons.save,color: Colors.white,size: 30,),),
+              IconButton(onPressed: () {
+              },icon:Icon(Icons.share,color: Colors.white,size: 30,),),
+            ],
+          ),
                 ],
               ),
             ),
           ],
-        ));
+        ),
+    );
   }
 }

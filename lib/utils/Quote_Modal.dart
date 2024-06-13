@@ -6,13 +6,17 @@ class QuoteModel
   String? author;
   String? quote;
   String? love;
+  String? sad;
+  String? happy;
+  String? spritual;
+  String? gmq;
   List <QuoteModel> quoteModelist=[];
 
-  QuoteModel({this.author,this.quote,this.love});
+  QuoteModel({this.author,this.quote,this.love,this.sad,this.happy,this.spritual,this.gmq});
 
   factory QuoteModel.fromQuotes(Map m1)
   {
-    return QuoteModel(author: m1['author'],quote: m1['quote'],love:m1['love']);
+    return QuoteModel(author: m1['author'],quote: m1['quote'],love:m1['love'],sad: m1['sad'],spritual: m1['spritual'],gmq: m1['gmq'],happy: m1['happy']);
   }
 
 
