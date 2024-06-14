@@ -2,8 +2,10 @@
 List selectedIndex=[];
 
 List quotes=[
-  quoteList,LoveList,happyQuotes,sadQuotes,spiritualQuotes,goodMorningQuotes,imgList,images
+  quoteList,loveQuotes,happyQuotes,sadQuotes,spiritualQuotes,goodMorningQuotes,imgList,images
 ];
+
+
 List quoteList = [
   {
     "quote":
@@ -106,49 +108,17 @@ List quoteList = [
   },
 ];
 // loveQuotes
-List LoveList=[
-  {
-    'love':'“I love you more than words can express”',
-  },
-  {
-    'love':'“I love you more than I did yesterday, but not as much as tomorrow”',
-  },
-  {
-    'love':'"I will love you until the end of time"',
-  },
-  {
-    'love':'“I love you, forever and always”',
-  },
-  {
-    'love':'“Love all, trust a few, do wrong to none.” – ...',
-  },
-  {
-    'love':'“You call it madness, but I call it love.” – ...',
-  },
-  {
-    'love':' “A life lived in love will never be dull.” – ...',
-
-  },
-  {
-    'love':'“Life is the flower for which love is the honey.” – ...',
-
-  },
-  {
-    'love':'“All you need is love.” – ...',
-
-  },
-  {
-    'love':'"I love you and I like you." — ...',
-
-  },
-  {
-    'love':'"For small creatures such as we, the vastness is bearable only through love." — ...',
-
-  },
-  {
-    'love':'"Nobody has ever measured, not even poets, how much the heart can hold." — ...',
-
-  },
+List loveQuotes = [
+  {"author": "Aristotle", "quote": "Love is composed of a single soul inhabiting two bodies."},
+  {"author": "Victor Hugo", "quote": "The greatest happiness of life is the conviction that we are loved; loved for ourselves, or rather, loved in spite of ourselves."},
+  {"author": "Antoine de Saint-Exupéry", "quote": "Love does not consist of gazing at each other, but in looking outward together in the same direction."},
+  {"author": "Audrey Hepburn", "quote": "The best thing to hold onto in life is each other."},
+  {"author": "Oscar Wilde", "quote": "You don't love someone for their looks, or their clothes, or for their fancy car, but because they sing a song only you can hear."},
+  {"author": "Joseph Campbell", "quote": "Love is a friendship set to music."},
+  {"author": "Eleanor Roosevelt", "quote": "The giving of love is an education in itself."},
+  {"author": "Robert Frost", "quote": "Love is an irresistible desire to be irresistibly desired."},
+  {"author": "David Viscott", "quote": "To love and be loved is to feel the sun from both sides."},
+  {"author": "Nicholas Sparks", "quote": "Love is like the wind, you can't see it but you can feel it."}
 ];
 // happyQuotes
 List happyQuotes = [
@@ -334,27 +304,27 @@ List goodMorningQuotes = [
 
 List imgList=[
   {
-    'cat':'Motivation',
+    'cat':'Motivation_Quotes',
     'img':'assets/motivation.jpeg',
   },
   {
-    'cat':'love',
+    'cat':'Love_Quotes',
     'img':'assets/love.jpeg',
   },
   {
-    'cat':'happy' ,
+    'cat':'Happy_Quotes' ,
     'img':'assets/happy.jpeg' ,
   },
   {
-    'cat':'sad' ,
+    'cat':'Sad_Quotes' ,
     'img':'assets/sad.jpeg' ,
   },
   {
-    'cat':'spritual',
+    'cat':'Spritual_Quotes',
     'img':'assets/spritual.png',
   },
   {
-    'cat': 'goodmorning',
+    'cat': 'GoodMorning_Quotes',
     'img':'assets/goodmornig.jpeg' ,
   },
 ];

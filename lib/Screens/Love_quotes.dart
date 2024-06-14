@@ -25,7 +25,7 @@ class _LoveQuotesState extends State<LoveQuotes> {
     setState(() {
 
     });
-    quoteModel=QuoteModel.toList(LoveList);
+    quoteModel=QuoteModel.toList(loveQuotes);
     super.initState();
 
   }

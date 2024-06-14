@@ -24,7 +24,7 @@ class _SpritualQuotesState extends State<SpritualQuotes> {
     setState(() {
 
     });
-    quoteModel=QuoteModel.toList(LoveList);
+    quoteModel=QuoteModel.toList(loveQuotes);
     super.initState();
 
   }
@@ -63,7 +63,6 @@ class _SpritualQuotesState extends State<SpritualQuotes> {
             color: colorList[index % colorList.length],
             child: ListTile(
               title: Text(quoteModel!.quoteModelist[index].love!),
-              // subtitle: Text(quoteModel!.quoteModelist[index].author!),
             ),
           ),
         ),
@@ -74,8 +73,6 @@ class _SpritualQuotesState extends State<SpritualQuotes> {
             child: Column(children: [
               ListTile(
                 title: Text(quoteModel!.quoteModelist[index].love!),
-
-                // Text(quoteModel!.quoteModelist[index].author!,style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color: Colors.black),),
               )
             ],),
           )),
@@ -92,7 +89,7 @@ class _SpritualQuotesState extends State<SpritualQuotes> {
             builder: (context) {
               return AlertDialog(
                 backgroundColor: colorList[x % colorList.length],
-                // title: Text(quoteModel!.quoteModelist[x].author!),
+                 title: Text(quoteModel!.quoteModelist[x].author!),
                 content: Text(quoteModel!.quoteModelist[x].love!),
                 actions: [
                   TextButton(

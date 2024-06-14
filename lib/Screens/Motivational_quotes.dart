@@ -29,7 +29,7 @@ class _MotivationState extends State<Motivation> {
       backgroundColor: Colors.black,
       appBar: AppBar(
         backgroundColor: Colors.white,
-        title: Text('Motivational_Quotes',
+        title: Text('$Quotes ',
             style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 20,
@@ -47,8 +47,7 @@ class _MotivationState extends State<Motivation> {
               ))
         ],
       ),
-      body: (xh)
-          ?
+      body:
           GridView.builder(
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 2, crossAxisSpacing: 9 / 16),
@@ -67,58 +66,40 @@ class _MotivationState extends State<Motivation> {
                   ),
                 ),
               ),
-            )
-          : ListView.builder(
-              itemBuilder: (context, index) => Card(
-                    color: colorList[index % colorList.length],
-                    child: Column(
-                      children: [
-                        ListTile(
-                          title: Text(quoteModel!.quoteModelist[index].quote!),
-                          subtitle: Text(
-                            quoteModel!.quoteModelist[index].author!,
-                            style: TextStyle(
-                                fontSize: 15,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.black),
-                          ),
-                        )
-                      ],
-                    ),
-                  )),
+            ),
     );
-    floatingActionButton:
-    FloatingActionButton(
-      onPressed: () {
-        Random random = Random();
-        int x = random.nextInt(quoteModel!.quoteModelist.length);
-
-        showDialog(
-          context: context,
-          builder: (context) {
-            return AlertDialog(
-              backgroundColor: colorList[x % colorList.length],
-              title: Text(quoteModel!.quoteModelist[x].author!),
-              content: Text(quoteModel!.quoteModelist[x].quote!),
-              actions: [
-                TextButton(
-                  onPressed: () {},
-                  child: Text('save'),
-                ),
-                TextButton(
-                  onPressed: () {
-                    Navigator.of(context).pop();
-                  },
-                  child: Text('back'),
-                ),
-              ],
-            );
-          },
-        );
-      },
-      child: Icon(Icons.next_plan),
-    );
+//     floatingActionButton:
+//     FloatingActionButton(
+//       onPressed: () {
+//         Random random = Random();
+//         int x = random.nextInt(quoteModel!.quoteModelist.length);
+//
+//         showDialog(
+//           context: context,
+//           builder: (context) {
+//             return AlertDialog(
+//               backgroundColor: colorList[x % colorList.length],
+//               title: Text(quoteModel!.quoteModelist[x].author!),
+//               content: Text(quoteModel!.quoteModelist[x].quote!),
+//               actions: [
+//                 TextButton(
+//                   onPressed: () {},
+//                   child: Text('save'),
+//                 ),
+//                 TextButton(
+//                   onPressed: () {
+//                     Navigator.of(context).pop();
+//                   },
+//                   child: Text('back'),
+//                 ),
+//               ],
+//             );
+//           },
+//         );
+//       },
+//       child: Icon(Icons.next_plan),
+//     );
   }
-}
+ }
 
 int select = 0;

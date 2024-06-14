@@ -25,7 +25,7 @@ class _MorningQuotesState extends State<MorningQuotes> {
     setState(() {
 
     });
-    quoteModel=QuoteModel.toList(LoveList);
+    quoteModel=QuoteModel.toList(loveQuotes);
     super.initState();
 
   }
@@ -64,7 +64,7 @@ class _MorningQuotesState extends State<MorningQuotes> {
             color: colorList[index % colorList.length],
             child: ListTile(
               title: Text(quoteModel!.quoteModelist[index].love!),
-              // subtitle: Text(quoteModel!.quoteModelist[index].author!),
+               subtitle: Text(quoteModel!.quoteModelist[index].author!),
             ),
           ),
         ),
@@ -74,6 +74,7 @@ class _MorningQuotesState extends State<MorningQuotes> {
             color: colorList[index % colorList.length],
             child: Column(children: [
               ListTile(
+                subtitle: Text('${quotes[ch][index]['author']}'),
                 title: Text('${quotes[ch][index]['quote']}'),
               )
             ],),
