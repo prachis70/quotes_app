@@ -328,7 +328,26 @@ List imgList=[
     'img':'assets/goodmornig.jpeg' ,
   },
 ];
-
+List pr=[
+  {
+    'img':'assets/motivation.jpeg',
+  },
+  {
+    'img':'assets/love.jpeg',
+  },
+  {
+    'img':'assets/happy.jpeg' ,
+  },
+  {
+    'img':'assets/sad.jpeg' ,
+  },
+  {
+    'img':'assets/spritual.png',
+  },
+  {
+    'img':'assets/goodmornig.jpeg' ,
+  },
+];
 List images=[
   'assets/background/bg1.jpeg',
   'assets/background/bg2.jpeg',

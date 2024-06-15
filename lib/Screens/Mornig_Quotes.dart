@@ -27,7 +27,6 @@ class _MorningQuotesState extends State<MorningQuotes> {
     });
     quoteModel=QuoteModel.toList(loveQuotes);
     super.initState();
-
   }
 
   Widget build(BuildContext context) {

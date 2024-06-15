@@ -34,14 +34,10 @@ bool xh=false;
 List colorList=[
  // Colors.pinkAccent,
   Colors.white,
-  Colors.yellowAccent,
-  Colors.greenAccent,
-  Colors.amberAccent,
   Colors.teal,
   Colors.grey,
   Colors.white,
   Colors.green,
-  Colors.amber,
   Colors.teal,
   Colors.grey,
 ];

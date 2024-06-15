@@ -104,6 +104,15 @@ flutter:
     - assets/background/bg8.jpeg
     - assets/background/bg9.jpeg
     - assets/background/bg10.jpeg
+    - assets/quote.jpg
+    - assets/bird.jpg
+
+    - assets/st.jpeg
+    - assets/st1.jpeg
+    - assets/st2.jpeg
+    - assets/st3.jpeg
+    - assets/st4.jpeg
+    - assets/st5.jpg
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

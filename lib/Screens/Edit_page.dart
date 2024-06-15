@@ -71,7 +71,7 @@ class _Edit_pageState extends State<Edit_page> {
                 ByteData? byteData=await image.toByteData(format: ui.ImageByteFormat.png);
                 Uint8List img = byteData!.buffer.asUint8List();
                 ImageGallerySaver.saveImage(img);
-              },icon: Icon(Icons.save,color: Colors.white,size: 50,),),
+              },icon: Icon(Icons.save,color: Colors.white,size: 40,),),
 
               IconButton(onPressed: () async {
                 RenderRepaintBoundary boundary=imgkey.currentContext!.findRenderObject() as RenderRepaintBoundary;
@@ -83,7 +83,7 @@ class _Edit_pageState extends State<Edit_page> {
                 file.writeAsBytes(img);
                 ShareExtend.share(file.path, "image");
 
-              },icon:Icon(Icons.share,color: Colors.white,size: 50,),),
+              },icon:Icon(Icons.share,color: Colors.white,size: 40,),),
             ],
           ),
                 ],

@@ -12,8 +12,8 @@ class _HomepageState extends State<Homepage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
       drawer: Drawer(
+        backgroundColor: Colors.white,
         child: Column(
           children: [
             Container(
@@ -73,7 +73,7 @@ class _HomepageState extends State<Homepage> {
           });
 
         },
-        child: InkWell(child: Icon(Icons.next_plan_rounded,color: Colors.blue,),),
+        child: InkWell(child: Icon(Icons.next_plan_rounded,color: Colors.black,),),
       ),
     );
   }
