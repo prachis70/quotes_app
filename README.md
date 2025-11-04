@@ -16,4 +16,5 @@
 <img src ="https://github.com/prachis70/quotes_app/assets/149580593/f0d919b3-a8de-48b4-b986-d8508d675278" heigth=20% width=25%>
 <img src ="https://github.com/prachis70/quotes_app/assets/149580593/f9cf2ac0-74d7-4ce6-8188-9edc0a9a84c7" heigth=20% width=25%>
 <img src ="https://github.com/prachis70/quotes_app/assets/149580593/b027cb71-ffa5-40fb-aab7-8ec199e14cbb" heigth=20% width=25%>
+<img src ="https://github.com/prachis70/quotes_app/assets/149580593/f8e908f1-c190-432a-b2cf-493ec8007097" heigth=20% width=25%>
 <video src="https://github.com/prachis70/quotes_app/assets/149580593/a6d5b699-7d59-4a34-9d8f-6a5ad849d642">
