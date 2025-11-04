@@ -1,11 +1,11 @@
 # quotes_app
 <img src ="https://github.com/prachis70/quotes_app/assets/149580593/f8e908f1-c190-432a-b2cf-493ec8007097" heigth=20% width=25%>
-
 <img src ="https://github.com/prachis70/quotes_app/assets/149580593/5b6fc065-5d9f-4c29-a830-7cd07ed1ff87" heigth=20% width=25%>
 <img src ="https://github.com/prachis70/quotes_app/assets/149580593/ad00dc40-bcb5-49b1-a4d6-bd551c71350b" heigth=20% width=25%>
 <img src ="https://github.com/prachis70/quotes_app/assets/149580593/f0d919b3-a8de-48b4-b986-d8508d675278" heigth=20% width=25%>
 <img src ="https://github.com/prachis70/quotes_app/assets/149580593/d662b577-7c32-4117-9240-b210d99740b1" heigth=20% width=25%>
 <img src ="https://github.com/prachis70/quotes_app/assets/149580593/9f2d1619-6bdf-4c92-bfe5-b04118b710e9" heigth=20% width=25%>
+<img src ="https://github.com/prachis70/quotes_app/assets/149580593/ad00dc40-bcb5-49b1-a4d6-bd551c71350b" heigth=20% width=25%>
 <img src ="https://github.com/prachis70/quotes_app/assets/149580593/b0a469d1-7236-4b87-b02f-788b19e416c7" heigth=20% width=25%>
 <img src ="https://github.com/prachis70/quotes_app/assets/149580593/19f77581-5b7b-4f7f-9767-0a74ff8b8242"" heigth=20% width=25%>
 <img src ="https://github.com/prachis70/quotes_app/assets/149580593/f0d919b3-a8de-48b4-b986-d8508d675278" heigth=20% width=25%>
